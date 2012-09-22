@@ -1,7 +1,7 @@
 pax
 ------------------------------------------
 
-Portable Archive Interchange (cpio, pax, tar)
+Portable Archive Interchange
 
 pax is an implementation of an archiving utility that reads
 and writes several formats - traditional ones, the extended

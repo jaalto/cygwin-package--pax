@@ -1,4 +1,4 @@
-sdesc: "Portable Archive Interchange (cpio, pax, tar)"
+sdesc: "Portable Archive Interchange"
 ldesc: "An implementation of an archiving utility that reads
 and writes several formats - traditional ones, the extended
 formats specified in IEEE 1003.1, and the ar(5) format. The
