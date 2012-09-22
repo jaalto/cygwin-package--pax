@@ -1,2 +1,2 @@
 #!/bin/sh
-echo "Noting to do"
+echo "Nothing to do"
