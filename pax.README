@@ -1,0 +1,85 @@
+pax
+------------------------------------------
+
+Portable Archive Interchange (cpio, pax, tar)
+
+pax is an implementation of an archiving utility that reads
+and writes several formats - traditional ones, the extended
+formats specified in IEEE 1003.1, and the ar(5) format. The
+pax interface was designed by IEEE 1003.2 as a compromise in
+the chronic controversy over which of tar or cpio is best, but
+this implementation offers paxcpio and paxtar for easy calling.
+
+This is the MirBSD paxtar implementation supporting the formats
+ar, bcpio, cpio, SVR4 cpio with and without CRC, old tar, and
+ustar, but not the format known as pax yet. It has extensions
+for removing non-numerical user and group IDs from the archive,
+storing hardlinked files only once, setting ownership to the
+superuser, anonymising inode and device information, changing
+the mtime to zero, and producing GNU tar compatible trailing
+slashes on ustar directory nodes. Its "ar" format is suitable
+for operating on *.deb files, unlike that of GNU binutils.
+
+Note that ACLs and Extended Attributes are not supported.
+Also, dependn on the OS, size of archive members is limited
+to the width of the "long" type, that is, 2 GiB on platforms
+that do not have a 64-bit "long" type.
+
+Examples
+
+   pax -wf ../archive.pax .   	# make archive
+   pax -f archive.pax		# list contents
+
+Runtime requirements:
+  cygwin
+
+Build requirements:
+  cygwin
+
+Canonical homepage:
+  http://packages.debian.org/sid/pax
+
+Canonical download:
+  https://www.mirbsd.org/MirOS/dist/mir/cpio/
+
+Version control repository:
+
+Mailing list:
+
+Forum / Wiki:
+
+IRC channel:
+
+Upstream contact:
+  Maintainer: Thorsten Glaser <tg@mirbsd.de>
+  Bugs: Thorsten Glaser <tg@mirbsd.de>
+
+License:
+  BSD
+
+Language:
+  C
+
+------------------------------------------
+
+Build instructions:
+  unpack pax-*-src.tar.bz2
+    if you use setup to install this src package, it will be
+    unpacked under /usr/src automatically
+  cd /usr/src
+  ./pax*.sh all
+
+------------------------------------------
+
+Files included in the binary distribution:
+  See Cygwin package archive
+
+------------------------------------------
+
+Port Notes:
+
+----- version 20120606-1 -----
+- Initial release 2012-09-22 Jari Aalto
+
+Cygwin port maintained by: Jari Aalto <jari.aalto@cante.net>
+Copyright (C) 2012 Jari Aalto; Licensed under GPL v2 or later

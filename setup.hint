@@ -1,0 +1,10 @@
+sdesc: "Portable Archive Interchange (cpio, pax, tar)"
+ldesc: "An implementation of an archiving utility that reads
+and writes several formats - traditional ones, the extended
+formats specified in IEEE 1003.1, and the ar(5) format. The
+pax interface was designed by IEEE 1003.2 as a compromise in
+the chronic controversy over which of tar or cpio is best, but
+this implementation offers paxcpio and paxtar for easy calling.
+This is the MirBSD paxtar implementation."
+category: Archive
+requires: cygwin
