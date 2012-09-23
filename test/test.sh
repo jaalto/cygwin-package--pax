@@ -1,5 +1,7 @@
 #!/bin/sh
 
+TMPDIR=${TMPDIR:-/tmp}
+
 Run ()
 {
     echo "$*"
@@ -7,11 +9,11 @@ Run ()
     eval "$@"
 }
 
-file=../archive.pax
+file=$TMPDIR/archive.$$.pax
 
-Run "make archive:"  pax -wf $file .
-Run "list contents:" "pax -f  $file | head"
+trap "rm -f $file" 0 1 2 3 15
 
-rm -f $file
+Run "TEST make archive:"  pax -wf $file .
+Run "TEST list contents:" "pax -f  $file | head"
 
 # End of file
