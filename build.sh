@@ -1,5 +1,4 @@
 #!/bin/sh
-# Copyright (C) YYYY Firstname Lastname; Licensed under GPL v2 or later
 #
 # build.sh -- Custom build steps
 #
