@@ -5,7 +5,7 @@ Subject: New package: pax 20120606-1 -- Portable Archive Interchange
 PACKAGE DESCRIPTION
 ===================
 
-Homepage:
+Homepage: http://packages.debian.org/sid/pax
 License : BSD
 
 pax is an implementation of an archiving utility that reads
@@ -18,7 +18,7 @@ this implementation offers paxcpio and paxtar for easy calling.
 CHANGES SINCE LAST RELEASE
 ==========================
 
-None.
+This project does not maintain release notes.
 
 INSTALL OR UPGRADE NOTES
 ========================
