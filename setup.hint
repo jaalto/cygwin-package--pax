@@ -7,4 +7,3 @@ the chronic controversy over which of tar or cpio is best, but
 this implementation offers paxcpio and paxtar for easy calling.
 This is the MirBSD paxtar implementation."
 category: Archive
-requires: cygwin
